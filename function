@@ -1,0 +1,10 @@
+Function CityName(city As String) As String
+
+    If InStr(city, "(") Then
+        limit = InStr(1, city, "(")
+        CityName = Left(city, limit - 2)
+    Else
+        CityName = city
+    End If
+
+End Function
